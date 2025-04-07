@@ -16,15 +16,15 @@ function Current(){
     const [date,setDate]=useState(moment().format('YYYY-MM-DD'))//기본 오늘날짜
 
     useEffect(()=>{
-        alert('Current새로고침!')
+        //alert('Current새로고침!')
         
         // 쿼리 문자열이 없다면, 자동으로 쿼리 문자열을 추가한 URL로 리디렉션
         const today = moment().format('YYYY-MM-DD')
         if (!location.search) {
-            alert('첫진입!')
+            //alert('첫진입!')
             navigate(`/movie/running/current.naver?region=서울&district=노원&date=${today}`);
         }else{
-            alert('메뉴 선택!')
+            //alert('메뉴 선택!')
 
             const queryObj = queryString.parse(window.location.search)
             console.log(queryObj)
