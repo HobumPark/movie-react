@@ -20,7 +20,8 @@ function CurrentTheaterList(){
     },[])
 
     const getScreeningInformation=async()=>{
-        alert('getScreeningInformation')
+        //alert('getScreeningInformation')
+        console.log('getScreeningInformation')
         const queryObj = queryString.parse(window.location.search)
         console.log(queryObj)
         const region = queryObj.region
@@ -32,10 +33,14 @@ function CurrentTheaterList(){
             date = moment().format('YYYY-MM-DD')
         }
         
-        alert(region)
-        alert(district)
-        alert(date)
-        
+        //alert(region)
+        //alert(district)
+        //alert(date)
+        console.log(region)
+        console.log(district)
+        console.log(date)
+
+
         await axios.get(`/api/v1/get/screening_info?region=${region}&district=${district}&date=${date}`)
         .then(response=>{
             console.log(response)

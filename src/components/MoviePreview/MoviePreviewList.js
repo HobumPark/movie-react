@@ -4,7 +4,10 @@ import MoviePreview from './MoviePreview.js'
 import moment from 'moment'
 
 function MoviePreviewList(props){
-    const moviePreviewMap = props.moviePreviewList.map(
+     // moviePreviewList가 null 또는 undefined일 경우 빈 배열을 반환하도록 처리
+     const moviePreviewList = props.moviePreviewList || [];
+
+    const moviePreviewMap = moviePreviewList.map(
         (data)=>(<MoviePreview no={data.no} title={data.title}
                   writer={data.writer} write_date={moment(data.write_date).format('YYYY-MM-DD')}
                   attach={data.attach} hits={data.hits}/>)
