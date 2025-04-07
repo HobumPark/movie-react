@@ -1,0 +1,14 @@
+
+#current{
+    width:100%;
+    height:auto;
+    background-color: goldenrod;
+}
+
+#current>h1{
+    padding-left: 20px;
+    height:60px;
+    box-sizing: border-box;
+    background-color: greenyellow;
+}
+

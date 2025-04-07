@@ -1,0 +1,23 @@
+
+#movie-preview-main{
+    width:100%;
+    height:720px;
+    background-color: orange;
+    padding-top:30px;
+    box-sizing: border-box;
+}
+
+#movie-preview-main>button{
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    cursor: pointer;
+    float:right;
+
+    position: relative;
+    right:10px;
+    top:10px;
+}
+#movie-preview-main>button:hover{
+    background-color: #333;
+}
