@@ -48,14 +48,14 @@ function MoviePreviewView(){
     }
 
     const updateView=async()=>{
-        alert('수정!')
+        //alert('수정!')
 
         const boardUpdate
         ={title:title,contents:contents,writer:'noname',
         write_date:'2023-01-01',attach:'Y',hits:0}
 
         if(edit===true){
-            alert('수정요청!')
+            //alert('수정요청!')
             await axios.put(`/api/v4/movie_preview_update`,boardUpdate)
             .then(response => {
                 console.log(response);

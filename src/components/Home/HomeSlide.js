@@ -23,7 +23,7 @@ function HomeSlide(){
     },[])
 
     const moveMovieView=(movieId)=>{
-        alert('상세보기 이동!:'+movieId)
+        //alert('상세보기 이동!:'+movieId)
         window.location.href=`movie/view/main?id=${movieId}&menu=1`
     }
 
